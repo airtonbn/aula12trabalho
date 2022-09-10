@@ -61,9 +61,30 @@ main {
 h1 {
     margin-top: 50px;
     padding: 20px;
-    color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
     display: flex;
     justify-content: center;
+}
+
+h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    border-radius: 50px;
+    backdrop-filter: blur(50px);
+    display: flex;
+    justify-content: center;
+}
+
+.pai .info{
+    font-size: 16px;
+}
+
+.pai h3 {
+    font-size: 20px;
 }
 
 .pai {
@@ -72,14 +93,15 @@ h1 {
 }
 
 .pai div{
-    font-size: 10px;
     background-color: white;
     border-radius: 12px;
     margin: 15px;
     padding: 20px;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 350px;
 }
+
+
 
 .video {
     padding-top: 10px;
@@ -112,11 +134,48 @@ footer img {
 }
 
 @media (max-width: 425px) {
-    main {
-        color: red;
+    .texto {
+        padding-bottom: 30px;
+    }
+    .pai {
+        flex-wrap: wrap;
     }
     .pai div {
-
-        flex-direction: column;
+        width: 320px;
+        height: 500px;
+        margin: 10px 2px 10px 2px;
+        padding: 0 15px 0 15px;
     }
+    .pai .info{
+        font-size: 20px;
+    }
+    
+    .pai h3 {
+        font-size: 25px;
+    }
+    .video {
+        padding-top: -2px;
+    }
+
+    h1 {
+        margin-top: 50px;
+        padding: 20px;
+        color: black;
+        border-radius: 0px;
+        backdrop-filter: blur(50px);
+        display: flex;
+        justify-content: center;
+    }
+    
+    h2 {
+        font-size: 35px;
+        margin-top: 20px;
+        padding: 10px;
+        color: black;
+        border-radius: 0;
+        backdrop-filter: blur(50px);
+        display: flex;
+        justify-content: center;
+    }
+
 }
