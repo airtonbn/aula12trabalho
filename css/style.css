@@ -159,8 +159,8 @@ footer img {
         margin-top: 50px;
         padding: 20px;
         color: black;
+        background-color: #d5d1d12f;
         border-radius: 0px;
-        backdrop-filter: blur(50px) brightness (1.2);
         display: flex;
         justify-content: center;
     }
@@ -170,7 +170,7 @@ footer img {
         margin-top: 20px;
         padding: 10px;
         color: black;
-        backdrop-filter: blur(50px) brightness (1.2);
+        background-color: #d5d1d12f;
         display: flex;
         justify-content: center;
     }
