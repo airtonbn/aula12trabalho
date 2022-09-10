@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #592405;
+    padding: 10px 20px;
+    display: flex;/*joga o menu para a direita*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width:10%;
+    height: auto;
+    border-radius: 10px;
+}
+
+header ul {
+    color: aliceblue;
+    display: flex;/*deixa a navegação alinhada*/
+}
+
+header li {
+    margin: 5px;
+    color: aliceblue;
+    cursor: pointer;/*mão do cursor*/
+    list-style: none;
+    transition: 0.4s;
+}
+
+li:hover {
+    color: #2a1711;
+    text-shadow: 0 0 8px white;
+}
+
+main {
+    background-image: url('../img/sjc.jpg');
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0 0 1rem black;/*simula uma sombra*/
+}
+
+.resumo{
+    color: aliceblue;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    padding: 20px; 
+    text-align: justify;
+}
+
+h1 {
+    margin-top: 50px;
+    padding: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.pai {
+    display: flex;
+    justify-content: center;
+}
+
+.pai div{
+    font-size: 10px;
+    background-color: white;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.video {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #592405;
+    color: aliceblue;
+    padding: 20px;
+}
+
+.ul-footer {
+    padding: 20px;
+    display: flex;
+}
+footer img {
+    width:70%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ul-footer li {
+    list-style: none;
+    filter: brightness(100);
+}
+
+@media (max-width: 425px) {
+    main {
+        color: red;
+    }
+    .pai div {
+
+        flex-direction: column;
+    }
+}
